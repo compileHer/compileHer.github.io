@@ -380,6 +380,11 @@ p.capitalize:first-letter {
 }
 
 /* Color Wraps */
+#yellow {
+	background-color: #f9d473;
+/*	width: 100%;
+*/}
+
 #white {
 	margin-top: 0px;
 	background-color: #ffffff;

@@ -1,0 +1,47 @@
+TO-DO List for compile/Her:
+
+MAIN:
+- fix header logo ... this will be the five girls (cyan, vert etc.)
+evenly spaced between the links to the other pages. They will
+be properly sized, but they won't increase the width of the header
+- One page vs. Multi-page style? Where does compile/Her stand on
+this? If one page, what info should I cut?
+- Opinions on the footer? too little info? (I figured since the
+header was always present I didn't need much in the footer ...
+social media buttons should be bigger. Is the logo okay to use
+here?)
+- Is the white-based theme okay? How about hot pink? Do you like
+the colors?
+
+index.html
+-Change background image or fix word positioning. The contrast
+color should be more visible. Also, change the image to pink
+shirts from the original page ... this should match the theme 
+better.
+-Apply the special font to the title ... I need to download this.
+
+about.html
+- Should there be special hover effects to the pics of the team?
+- Provide additional about write-up ... elaborate on mission.
+- Set either the name or the position to the accent color.
+
+upcoming.html
+- Do you like the side-by-side? Or should it scroll one-by-one
+like the sponsors? Or should I have a brief descriptions with 
+a link to learn more?
+
+past.html
+- Same as upcoming.html
+
+workshops.html
+- What picture to include here?
+- Include contact form.
+- Include a better write-up for the workshops in the 
+description.
+- Are pictures necessary here?
+
+gallery.html
+- Should the gallery be scrolling down or side-by-side 
+(like the sponsors)? Should I divide pictures by event?
+(for example, http://www.bridgerbiathlonclub.org/gallery/ 
+this is my reference).

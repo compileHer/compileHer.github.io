@@ -61,7 +61,7 @@ $(document).ready(function () {
                 autoplay: 2500,
                 smartSpeed: 1500,
                 dots: false,
-                navText: ['<img src="img/left-arrow.png">', '<img src="img/right-arrow.png">'],
+                //navText: ['<img src="img/left-arrow.png">', '<img src="img/right-arrow.png">'],
                 responsiveClass: true
             })
         }

@@ -1923,8 +1923,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Start Home Banner Area
 ============================================================================================ */
 .home-banner-area {
-  background: url(../img/header-bg4.jpg) no-repeat center; }
-  .home-banner-area .height {
+  background: 
+      /*url(../img/header-bg4.jpg)*/
+  no-repeat center; }
+  .home-banner-.height {
     height: 750px; }
   @media (max-width: 991px) {
     .home-banner-area .height {

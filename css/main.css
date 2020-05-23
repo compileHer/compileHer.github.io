@@ -1,3 +1,24 @@
+/* Custom Styling */
+.banner-content {
+  padding: 3rem 0 1rem 0;
+}
+
+.gallery_label {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 24px;
+}
+
+.thumbnail_container {
+  text-align: center;
+  padding: 0 0 0 10px;
+}
+
+.event_thumbnail {
+  margin-bottom: 2rem;
+}
+
+
 /*--------------------------- Color variations ----------------------*/
 /* Medium Layout: 1280px */
 /* Tablet Layout: 768px */
@@ -57,7 +78,7 @@
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /*Increase font size*/
   }
-  
+
   .to_top_button:hover {
     background-color: #777777; /*Add a dark-grey background on hover*/
   }
@@ -942,8 +963,8 @@ th {
   background: #fff; }
 
 .section-top-border {
-  padding: 50px 0;
-  border-top: 1px dotted #eee; }
+  padding: 30px 0;
+  border-top: 1px solid #ddd; }
 
 .switch-wrap {
   margin-bottom: 10px; }
@@ -1756,7 +1777,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   .left-align-p p {
-    margin-top: 20px; } }
+    } }
 
 .form-select {
   height: 40px;
@@ -1831,7 +1852,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.4s ease 0s; }
   @media (max-width: 767px) {
     .header-area {
-      position: absolute; } }
+      position: relative; } }
 
 .header-fixed {
   position: fixed;
@@ -1943,7 +1964,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Start Home Banner Area
 ============================================================================================ */
 .home-banner-area {
-  background: 
+  background:
       /*url(../img/header-bg4.jpg)*/
   no-repeat center; }
   .home-banner-.height {
@@ -2039,7 +2060,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: 60px; } }
 
 .menu-list {
-  padding: 80px 0px;
+  padding: 3rem;
   text-align: center;
   background: #fdefef; }
   @media (max-width: 991px) {
@@ -2103,10 +2124,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Start Gallery Area css
 ============================================================================================ */
 .gallery-area {
-  padding: 50px 0 90px; }
+  padding: 30px 0 90px; }
   @media (max-width: 991px) {
     .gallery-area {
-      padding: 80px 0 50px; } }
+      padding: 50px 0 50px; } }
 
 .single-gallery {
   position: relative;

@@ -2107,11 +2107,27 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 20px;
 }
 
-/* .member-img{
-  height: 225px;
-  width: 225px;
-  overflow: hidden;
-} */
+.single-team-member{
+  text-align: center;
+  margin-top: 15px;
+} 
+.single-team-member .proff{
+  padding-top: 15px;
+  padding-left: 15px;
+  text-align: center;
+  color: #000000;
+}
+.single-team-member h4{
+  color: #000000;
+  font-weight: bold;
+}
+.single-team-member a{
+  color: #000000;
+  font-weight: bold;
+}
+.single-team-member p{
+  color: #000000;
+}
 
 /* End About Area css
 ============================================================================================ */

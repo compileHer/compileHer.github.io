@@ -196,7 +196,7 @@ h6 {
 .h6 {
   margin-bottom: 0;
   margin-top: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Avenir-Next", sans-serif;
   font-weight: normal;
   color: #000; }
 
@@ -964,7 +964,7 @@ th {
 
 .generic-banner {
   margin-top: 60px;
-  background-color: #F88C8C;
+  background-color:  #FFF7F7;
   text-align: center; }
   .generic-banner .height {
     height: 600px; }
@@ -973,7 +973,8 @@ th {
         height: 400px; } }
   .generic-banner .generic-banner-content h2 {
     line-height: 1.2em;
-    margin-bottom: 20px; }
+    margin-bottom: 20px; 
+    font-style: bold;}
     @media (max-width: 991px) {
       .generic-banner .generic-banner-content h2 br {
         display: none; } }
@@ -2049,12 +2050,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner-content {
   text-align: center;
-  color: #fff; }
+  background-color: #FFF7F7; }
   .banner-content h1 {
-    color: #fff;
-    font-size: 48px;
-    text-transform: uppercase;
-    letter-spacing: 8.8px; }
+    /* color: #fff; */
+    font-size: 50px;
+    /* text-transform: uppercase; */
+    letter-spacing: 3px; }
+  .banner-content h2{
+    font-size: 38px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+  }
     @media (max-width: 1024px) {
       .banner-content h1 {
         letter-spacing: 5px; } }
@@ -2074,7 +2080,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 10px; }
   .banner-content p {
     font-size: 18px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding-top: 8px; }
 
 /* End Banner Area
@@ -2084,6 +2090,28 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
   .about-area .section-title {
     padding-top: 60px; } }
+
+.about-accomplish h1{
+    font-size: 50px;
+    font-family: "Avenir-Next", sans-serif;
+    letter-spacing: 3px;
+}
+
+.about-accomplish h3{
+    font-family: "Avenir-Next", sans-serif;
+}
+
+.fa-accomplish-icon{
+  font-size: 60px;
+  color: #D1D1D1;
+  padding-top: 20px;
+}
+
+/* .member-img{
+  height: 225px;
+  width: 225px;
+  overflow: hidden;
+} */
 
 /* End About Area css
 ============================================================================================ */

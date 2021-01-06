@@ -171,7 +171,7 @@
 	<section class="team-area section-gap">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-12 text-center" style="margin-bottom: 40px">
+                <div class="col-lg-12 text-center" style="margin-bottom: 20px">
                     <div class="hr-header" style="overflow:hidden; white-space:nowrap;">
                         <hr style="width:25%; text-align:left; margin-right: 50px; color:#707070; display: inline-block">
                         <h1 style="color: black; display: inline-block">Meet the <span style="color: #F88C8C">Team</span></h1>
@@ -179,18 +179,25 @@
                     </div>
                 </div>
             </div>
+            <!-- Control buttons -->
+            <div id="myBtnContainer" style="justify-content: center; display: flex; margin-bottom: 40px">
+                <button class="btn active left-btn" onclick="filterSelection('all')">All</button>
+                <button class="btn" onclick="filterSelection('curriculum')">Curriculum</button>
+                <button class="btn" onclick="filterSelection('communications')">Communications</button>
+                <button class="btn" onclick="filterSelection('events')">Events</button>
+                <button class="btn right-btn" onclick="filterSelection('outreach')">Outreach</button>
+            </div>
             <!-- ROW -->
             <div class="row">
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member events">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/shriya.jpg" alt="">
                         </div>
                         <div class="proff">
                             <h4>
-                                <a href="https://www.linkedin.com/in/jillian-ritchey/"
-                                  >Shriya</a>
+                                Shriya
                             </h4>
                             <p>Co-President / Events Director</p>
                         </div>
@@ -198,7 +205,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member communications">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/elaine.jpg" alt="">
                         </div>
@@ -213,7 +220,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member curriculum">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/carolina.jpg" alt="">
                         </div>
@@ -228,7 +235,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member curriculum">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/lilly.jpg" alt="">
                         </div>
@@ -246,7 +253,7 @@
             <div class="row">
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member curriculum">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/christina.jpg" alt="">
                         </div>
@@ -261,7 +268,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member events">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/lucy.jpg" alt="">
                         </div>
@@ -276,7 +283,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member events">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/alyson.jpeg" alt="">
                         </div>
@@ -290,7 +297,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member events">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/hatoon.jpeg" alt="">
                         </div>
@@ -303,15 +310,14 @@
             <!-- ROW -->
             <div class="row">
                 <!-- single member -->
-                <div class="col-lg-3 col-md-4">
+                <div class="col-lg-3 col-md-4 events">
                     <div class="single-team-member">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/emma.jpg" alt="">
                         </div>
                         <div class="proff">
                             <h4>
-                                <a href="http://linkedin.com/in/lucyyutingli"
-                               >Emma</a>
+                                Emma
                             </h4>
                             <p>Volunteer Coordinator</p>
                         </div>
@@ -319,7 +325,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member outreach">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/yichen.jpg" alt="">
                         </div>
@@ -331,7 +337,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member outreach">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/trisha.jpg" alt="">
                         </div>
@@ -343,7 +349,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member outreach">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/hadleigh.jpg" alt="">
                         </div>
@@ -360,7 +366,7 @@
             <div class="row">
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member events">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/lily.jpg" alt="">
                         </div>
@@ -374,7 +380,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member events">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/neha.jpg" alt="">
                         </div>
@@ -391,7 +397,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member outreach">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/isabella.jpg" alt="">
                         </div>
@@ -405,7 +411,7 @@
                 </div>
                 <!-- single member -->
                  <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member events">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/kate_hu.jpg" alt="">
                         </div>
@@ -421,7 +427,7 @@
             <div class="row">
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member events">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/maxine.jpg" alt="">
                         </div>
@@ -433,7 +439,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member events">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/katherine.jpg" alt="">
                         </div>
@@ -450,7 +456,7 @@
                 </div>
                 <!-- single member -->
                     <div class="col-lg-3 col-md-4">
-                        <div class="single-team-member">
+                        <div class="single-team-member outreach">
                             <div class="member-img">
                                 <img class="img-fluid img-round" src="img/team/deniz.jpg" alt="">
                             </div>
@@ -465,7 +471,7 @@
                     </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member outreach">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/hugo.jpg" alt="">
                         </div>
@@ -480,7 +486,7 @@
             <div class="row">
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member outreach">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/ishan.jpg" alt="">
                         </div>
@@ -494,7 +500,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member outreach">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/janet.jpg" alt="">
                         </div>
@@ -508,7 +514,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member communications">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/jessica.jpg" alt="">
                         </div>
@@ -523,7 +529,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member communications">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/kate_lu.jpg" alt="">
                         </div>
@@ -538,7 +544,7 @@
             <div class="row">
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member communications">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/ellen.jpg" alt="">
                         </div>
@@ -550,7 +556,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member communications">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/melanie.jpg" alt="">
                         </div>
@@ -562,7 +568,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member communications">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/michelle.jpg" alt="">
                         </div>
@@ -574,7 +580,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member curriculum">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/elly.jpg" alt="">
                         </div>
@@ -592,7 +598,7 @@
             <div class="row">
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member curriculum">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/margot.jpg" alt="">
                         </div>
@@ -607,7 +613,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member curriculum">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/elizabeth.jpg" alt="">
                         </div>
@@ -621,7 +627,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member curriculum">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/daniel.png" alt="">
                         </div>
@@ -633,7 +639,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member curriculum">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/claire-k.jpg" alt="">
                         </div>
@@ -648,7 +654,7 @@
             <div class="row">
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member curriculum">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/olivia-c.jpg" alt="">
                         </div>
@@ -660,7 +666,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member curriculum">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/vincent.jpg" alt="">
                         </div>
@@ -672,7 +678,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member curriculum">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/elsa.jpg" alt="">
                         </div>
@@ -684,7 +690,7 @@
                 </div>
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member curriculum">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/reilly.jpg" alt="">
                         </div>
@@ -699,7 +705,7 @@
             <div class="row">
                 <!-- single member -->
                 <div class="col-lg-3 col-md-4">
-                    <div class="single-team-member">
+                    <div class="single-team-member curriculum">
                         <div class="member-img">
                             <img class="img-fluid img-round" src="img/team/olivia-j.jpg" alt="">
                         </div>
@@ -751,6 +757,7 @@
 	<script src="js/bootstrap-datepicker.js"></script>
     <script src="js/main.js"></script>
     <script src="js/top-button.js"></script>
+    <script src="js/team-filter.js"></script>
 </body>
 
 </html>

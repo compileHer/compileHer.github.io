@@ -2110,6 +2110,7 @@ h1, h2, h3, h4, h5, h6 {
 .single-team-member{
   text-align: center;
   margin-top: 15px;
+  display: none;
 } 
 .single-team-member .proff{
   padding-top: 15px;
@@ -2127,6 +2128,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 .single-team-member p{
   color: #000000;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 25px;
+  background-color: #FFF7F7;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+/* Add a light grey underline on mouse-over */
+.btn:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  text-decoration: underline;
+  text-decoration-color: #F88C8C;
+  text-underline-offset: 5px;
+}
+
+.left-btn{
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.right-btn{
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 /* End About Area css

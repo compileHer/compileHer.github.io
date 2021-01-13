@@ -2107,10 +2107,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 20px;
 }
 
+/* .container {
+  overflow: hidden;
+} */
+
 .single-team-member{
+  float: left;
   text-align: center;
   margin-top: 15px;
   display: none;
+  height: 325px;
 } 
 .single-team-member .proff{
   padding-top: 15px;

@@ -15,7 +15,7 @@
 }
 
 .event_thumbnail {
-  margin-bottom: 2rem;
+  object-fit: fill;
 }
 
 
@@ -2177,6 +2177,45 @@ h1, h2, h3, h4, h5, h6 {
 
 /* End About Area css
 ============================================================================================ */
+
+/* Events Area css
+============================================================================================ */
+.event-card{
+  width: 80%;
+  margin: auto auto 30px auto;
+  padding: 10px;
+  outline: 2px black;
+  border: 1px solid black;
+  border-radius: 25px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.fa-events-icon{
+  font-size: 25px;
+  color: #D1D1D1;
+}
+
+.events-time-place{
+  width: 100%;
+}
+
+.events-date{
+  display:inline-flex;
+  width: 45%;
+}
+
+.events-place{
+  display:inline-flex;
+  width: 45%;
+}
+
+/* End Events Area css
+============================================================================================ */
+
 /* Menu List Area css
 ============================================================================================ */
 .menu-area .section-title {

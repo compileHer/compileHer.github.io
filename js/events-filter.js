@@ -1,45 +1,53 @@
-filterSelection("all")
-function filterSelection(c) {
+var btn = "all";
+var dropdown = [];
+
+let elem = [...document.querySelectorAll(".eventCheck")];
+elem.forEach((item) => item.addEventListener("change", getChecked));
+
+function getChecked() {
+  let getChex = elem.filter((item) => item.checked).map((item) => item.value);
+  console.log(getChex);
+  dropdown = getChex;
+  filterSelection(btn, dropdown);
+}
+
+function updateButton(f) {
+  btn = f;
+  filterSelection(btn, dropdown);
+}
+
+filterSelection(btn, dropdown);
+function filterSelection(b, d) {
   var x, i;
   x = document.getElementsByClassName("event-card");
-  if (c == "all") c = "";
+  if (b === "all" && d.length == 0) b = "";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-// Show filtered elements
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
+  if (d.length == 0) {
+    for (i = 0; i < x.length; i++) {
+      x[i].classList.remove("show");
+      if (x[i].className.indexOf(b) > -1) {
+        x[i].classList.add("show");
+      }
+    }
+  } else {
+    if(b == "all") b = "";
+    for (i = 0; i < x.length; i++) {
+      x[i].classList.remove("show");
+      for (j = 0; j < d.length; j++) {
+        // console.log(x[i].className.indexOf(b))
+        console.log(x[i].className.indexOf(d[j]))
+        if ((x[i].className.indexOf(b) > -1) && (x[i].className.indexOf(d[j]) > -1))
+          x[i].classList.add("show");
+      }
     }
   }
-}
-
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1); 
-    }
-  }
-  element.className = arr1.join(" ");
 }
 
 // Add active class to the current control button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+  btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("active");
     current[1].className = current[1].className.replace(" active", "");
     this.className += " active";

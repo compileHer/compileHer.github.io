@@ -144,6 +144,131 @@
             <div class="events">
 
                 <!-- single-event -->
+                <div class="event-card past workshop">
+                    <div class="row">
+                        <button type="button" class="col-md-12 modal-button" data-toggle="modal"
+                            data-target="#exampleModal" data-name="tinkHer" data-subtitle="tinkHer 2"
+                            data-logo="img/tinkHer/tinkher workshop logo.png" data-folder="/img/tinkHer"
+                            data-itinerary="true">
+                            <div style="display:inline-flex; margin-left: -10px">
+                                <div class="col-md-4  event_bg">
+                                    <img src="img/tinkHer/tinkher workshop thumb.png" alt="" class="img-fluid event_thumbnail">
+                                </div>
+                                <div class="col-md-8 mt-sm-20 left-align-p" style="margin-left: -15px">
+                                    <h3 style="font-weight:bold">tinkHer2</h3>
+                                    <p class="event-info">
+                                        tinkHer2 is a compileHer event spread over the course of two days where students 
+                                        will learn how to work with 3D print their own objects using 3D printing and experience 
+                                        the University of Chicago's MADD Center!
+
+                                        During the Zoom workshop on 11/13, students will learn about Computer Aided Design (CAD) 
+                                        and 3D printing. They will use TinkerCAD—a free, online Autodesk program—to design 
+                                        ornaments. The finished products will be printed in the University of Chicago's MADD 
+                                        Center and will be available for pickup at the second event, on 11/19. Students will also 
+                                        hear from MADD center speakers like Kent Lambert, Assistant Director of the Hack Arts Lab, 
+                                        and Ashlyn Sparrow, Assistant Director of the Weston Game Lab. All attendees will receive 
+                                        an individually wrapped snack after the event.
+
+                                        Prior experience not required, recommended for students in 6th grade and above (although 
+                                        younger students are welcome as well).
+
+                                        Note: This event is open to all attendees regardless of vaccination status and, because 
+                                        of ongoing health risks to the unvaccinated, those who are unvaccinated are expected to 
+                                        adopt the risk mitigation measures advised by public health officials (masking and social
+                                        distancing, etc.) Public convening may not be safe for all and carries a risk for 
+                                        contracting COVID-19, particularly for those unvaccinated. Participants will not know the 
+                                        vaccination status of others, including venue staff, and should follow appropriate risk 
+                                        mitigation measures.
+                                        
+
+                                    </p>
+                                    <div class="events-time-place">
+                                        <div class="events-date">
+                                            <i class="fa fa-calendar-o fa-events-icon" aria-hidden="true"></i>
+                                            <p style="margin-left: 10px">Nov 13 and 19, 2021</p>
+                                        </div>
+                                        <div class="events-place">
+                                            <i class="fa fa-map-marker fa-events-icon"></i>
+                                            <p style="margin-left: 10px">Virtual over Zoom</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- Trigger/Open The Modal
+                <button id="myBtn">Open Modal</button> -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <img src="" alt="" class="modal-header-img"></img>
+                                <div class="modal-header-info">
+                                    <img src="" alt="" class="modal-img"></img>
+                                    <div class="modal-header-text">
+                                        <div class="modal-header-titles">
+                                            <h2 class="modal-title" id="exampleModalLabel"></h2>
+                                            <h5 class="modal-subtitle" id="event_subheader"></h5>
+                                        </div>
+                                        <div class="modal-time-place">
+                                            <div class="modal-events-date">
+                                                <i class="fa fa-calendar-o fa-events-icon" aria-hidden="true"></i>
+                                                <p style="margin-left: 10px"></p>
+                                            </div>
+                                            <div class="modal-events-place">
+                                                <i class="fa fa-map-marker fa-events-icon"></i>
+                                                <p style="margin-left: 13px"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-blurb">
+                                    <p></p>
+                                </div>
+                                <br>
+                                <div class="modal-itinerary" id="modal-itinerary">
+                                    <div style="display:inline-flex">
+                                        <h4>Itinerary</h4>
+                                        <!-- <a href="#" id="show-itinerary" onclick="revealImg()">Click to show</a> -->
+                                        <a href="#" id="show-itinerary" style="margin-left:10px;"
+                                            onclick="revealImg()">Click to show</a>
+                                    </div>
+                                    <div>
+                                        <img class="modal-itinerary-img" id="modal-itinerary-img" src=""
+                                            style="display:none" />
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="modal-gallery" id="modal-gallery">
+                                    <h4>Gallery</h4>
+                                    <div class="modal-gallery-imgs">
+                                        <button class="slideshow-arrow" onclick="show_image('left')">&lt;</button>
+                                        <div class="main-image">
+                                            <img id="main-image1" />
+                                            <img id="main-image2" />
+                                            <img id="main-image3" />
+                                        </div>
+                                        <button class="slideshow-arrow" onclick="show_image('right')">&gt;</button>
+                                    </div>
+                                    <img id="viewer" src="" width="800px" />
+                                    <div id="info"> </div>
+                                    <!-- <img id="slideshow" src="img/logos/interstellher-logo.jpg" /> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- single-event -->
                 <div class="event-card past hackathon">
                     <div class="row">
                         <button type="button" class="col-md-12 modal-button" data-toggle="modal"

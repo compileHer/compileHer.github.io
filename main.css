@@ -2990,7 +2990,10 @@ h1, h2, h3, h4, h5, h6 {
 /* =================================== */
 /*-------- start footer Area -------------*/
 .footer-area {
-  background-color: #fff; }
+  background-color: #fff; 
+  display: inline-block;
+  width: 100%;
+  margin: auto}
 .footerimagelogo {
   justify-content: center;
   display: flex;

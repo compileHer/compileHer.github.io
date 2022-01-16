@@ -4,8 +4,9 @@ console.log(share);
 var $url = $(location).attr('href');
 
 function copy() {
-  urlCopied.innerHTML = window.location.href;
-  console.log(window.location.href);
+  var urlCopied = window.location.href;
+  console.log(urlCopied);
+  navigator.clipboard.writeText(urlCopied);
 }
 
 function myFunction() {

@@ -155,11 +155,23 @@
 
 
     <div style="display: inline-flex; width: 40%; margin-left: 15%;">
-        <div style="margin-left:25%; margin-top: 20px; width: 25%">
-            <i class="fa fa-heart" style="color: #F88C8C; margin-right: 3px;"></i>
-            1 appreciation
-          </div>
-        <div class="popup" id="share-btn" onclick="myFunction()" style="margin-left:5%; margin-top: 20px;">
+        <div
+        id="appreciate"
+        onclick="updateAppreciations()"
+        style="
+          margin-left: 25%;
+          margin-top: 20px;
+          width: 25%;
+          display: inline-flex;
+        "
+      >
+        <i class="fa fa-heart" style="color: #f88c8c; margin-right: 3px"></i>
+        <div style="display: inline-flex; margin-top: -5px">
+          <div id="clickCount" style="margin-right: 4px"></div>
+          appreciation(s)
+        </div>
+      </div>
+        <div class="popup" id="share-btn" onclick="myFunction()" style="margin-left:5%; margin-top: 15px;">
             <i class="fa fa-sign-out fa-rotate-270" style="margin-right: 3px;"></i> 
             Share
             <span class="popuptext" id="myPopup">Link copied to clipboard!</span>
@@ -178,6 +190,7 @@
     </div>
     
     <script src="js/blog-share.js"></script>
+    <script src="js/blog-ss1-appreciate.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </body>
 </html>

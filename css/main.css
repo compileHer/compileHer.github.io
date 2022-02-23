@@ -16,6 +16,12 @@
   border-radius: 25px 0 0 25px;
 }
 
+.blog_thumbnail {
+  object-fit: cover;
+  height: 280px;
+  width: 250px;
+  border-radius: 25px 0 0 25px;
+}
 
 /*--------------------------- Color variations ----------------------*/
 /* Medium Layout: 1280px */
@@ -147,7 +153,7 @@ button:focus {
 
 body {
   color: #777777;
-  font-family: "Avenir-Next", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
@@ -220,7 +226,7 @@ a:hover {
 }
 
 h1 {
-  font-family: "Avenir-Next", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #F88C8C;
   font-weight: bold;
 }
@@ -230,7 +236,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Avenir-Next", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #000;
   line-height: 1.2em;
   margin-bottom: 0;
@@ -246,7 +252,7 @@ h6 {
 .h6 {
   margin-bottom: 0;
   margin-top: 0;
-  font-family: "Avenir-Next", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: normal;
   color: #000;
 }
@@ -2853,12 +2859,12 @@ h6 {
 
 .about-accomplish h1 {
   font-size: 50px;
-  font-family: "Avenir-Next", sans-serif;
+  font-family: "Lato", sans-serif;
   letter-spacing: 3px;
 }
 
 .about-accomplish h3 {
-  font-family: "Avenir-Next", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .fa-accomplish-icon {
@@ -2984,7 +2990,7 @@ h6 {
   color: #777777;
 }
 
-.hide{
+.hide {
   visibility: hidden;
   height: 0px;
 }
@@ -3015,7 +3021,7 @@ h6 {
   width: 45%;
 }
 
-.modal-lg{
+.modal-lg {
   max-width: 900px;
 }
 
@@ -3037,12 +3043,12 @@ h6 {
   border-bottom: 0 none;
 }
 
-.modal-header .close{
+.modal-header .close {
   padding: 1.1em;
   z-index: 2;
 }
 
-.modal-header-info{
+.modal-header-info {
   display: inline-flex;
   z-index: 1;
   margin-left: 5%;
@@ -3060,14 +3066,14 @@ h6 {
   height: 200px;
 }
 
-.modal-header-titles{
+.modal-header-titles {
   position: relative;
   /* margin-top: 27.5%; */
   margin-left: 2.5%;
   width: 90%;
 }
 
-.modal-header-text{
+.modal-header-text {
   display: inline-flex;
   width: 65%;
   margin-top: 24%;
@@ -3078,7 +3084,7 @@ h6 {
   margin-top: 15%;
 }
 
-.modal-content h2{
+.modal-content h2 {
   font-weight: bold;
 }
 
@@ -3091,7 +3097,7 @@ h6 {
   object-fit: cover;
 }
 
-.modal-time-place{
+.modal-time-place {
   display: flex;
   flex-direction: column;
   margin-top: 2%;
@@ -3100,60 +3106,62 @@ h6 {
   font-size: 15px;
 }
 
-.modal-time-place .events-date{
+.modal-time-place .events-date {
   width: auto;
   height: 30px;
 }
 
-.modal-time-place .events-place{
+.modal-time-place .events-place {
   width: auto;
   margin-left: 3px;
   height: 30px;
 }
 
-.modal-time-place .fa-events-icon{
+.modal-time-place .fa-events-icon {
   font-size: 20px;
 }
 
-.modal-events-date{
+.modal-events-date {
   display: inline-flex;
   margin-bottom: -4%;
 }
 
-.modal-events-place{
+.modal-events-place {
   display: inline-flex;
 }
 
-.modal-body{
+.modal-body {
   padding: 1em 3em 2em 3em;
 }
 
-.modal-itinerary-img{
-  width:100%;
-  display:none;
+.modal-itinerary-img {
+  width: 100%;
+  display: none;
 }
 
-.modal-gallery-imgs{
+.modal-gallery-imgs {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 25px;
 }
 
-.slideshow-arrow{
-  margin:auto 0px;
+.slideshow-arrow {
+  margin: auto 0px;
   background-color: Transparent;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   border: none;
-  cursor:pointer;
+  cursor: pointer;
   overflow: hidden;
-  outline:none;
+  outline: none;
   color: #F88C8C;
   font-size: 20px;
   font-weight: bold;
 }
 
-#main-image1, #main-image2, #main-image3{
+#main-image1,
+#main-image2,
+#main-image3 {
   margin: 0px 5px;
   margin-bottom: 10px;
   object-fit: cover;
@@ -3171,13 +3179,170 @@ h6 {
 /* Workshops Area css
 ============================================================================================ */
 
-.workshop-video{
+.workshop-video {
   margin-top: 15px;
   text-align: center;
 }
 
-
 /* End Workshops Area css
+============================================================================================ */
+
+/* Blog Area css
+============================================================================================ */
+
+.blogher-img {
+  height: 250px;
+  border-radius: 25px;
+  /* margin-left: 20%; */
+}
+
+.banner-content.blog {
+  background: linear-gradient(white 0 28%, #FFF7F7 28% 100%);
+  margin: auto;
+  /* margin-bottom: 40px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.blog-card {
+  display: none;
+  width: 90%;
+  max-width: 780px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1), 0 8px 8px 0 rgba(0, 0, 0, .08);
+  border-radius: 25px;
+  margin: auto auto 30px auto;
+  padding: 0px;
+}
+
+.hide{
+  visibility: hidden;
+  height: 0px;
+}
+
+.show {
+  display: block;
+}
+
+.blog-card.h3 {
+  font-size: 28px;
+  letter-spacing: 0.75px;
+}
+
+.blog-publish {
+  color: #9A9A9A;
+}
+
+.byline {
+  color: #9A9A9A;
+  font-style: italic;
+}
+
+.blog-date-read {
+  margin-bottom: -0.5em;
+}
+
+.blog-info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: -webkit-box;
+  max-height: 7.2em;
+  line-height: 1.8em;
+  padding-right: 10px;
+}
+
+.continue-reading {
+  color: #F88C8C;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.post-content{
+  width: 50%;
+  margin: auto auto 20px auto;
+}
+
+.pink{
+  color: #F88C8C;
+}
+
+.about-author{
+  text-align: left; 
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+.author-img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
+a{
+  color: #e76871;
+}
+
+.back-button{
+  font-size: 2em;
+  padding-left: 35%;
+  padding-top: 25%;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: #F88C8C;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #F88C8C transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* End Blog Area css
 ============================================================================================ */
 
 

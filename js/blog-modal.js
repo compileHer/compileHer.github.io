@@ -21,4 +21,4 @@ $("#exampleModal").on("show.bs.modal", function (event) {
   modal.find(".modal-itinerary-img").attr("src", folder+"/schedule.png");
   modal.find(".modal-events-date p").text(date);
   modal.find(".modal-events-place p").text(place);
-}
+})

@@ -1,0 +1,478 @@
+/* Custom Styling */
+.container-inner-narrow {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-content {
+    padding: 3rem 0 1rem 0;
+}
+
+.gallery_label {
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 24px;
+}
+
+.event_thumbnail {
+    object-fit: cover;
+    height: 215px;
+    width: 225px;
+    border-radius: 25px 0 0 25px;
+}
+
+.blog_thumbnail {
+    object-fit: cover;
+    height: 280px;
+    width: 250px;
+    border-radius: 25px 0 0 25px;
+}
+
+.to_top_button {
+    display: none;
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #f88c8c;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /*Increase font size*/
+}
+
+.to_top_button:hover {
+    background-color: #777777;
+    /*Add a dark-grey background on hover*/
+}
+
+.primary-btn {
+    line-height: 48px;
+    padding: 0 30px;
+    border-radius: 25px;
+    background: #f88c8c;
+    border: 1px solid #f88c8c;
+    color: #fff;
+    display: inline-block;
+    font-weight: normal;
+    position: relative;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.primary-btn:focus {
+    outline: none;
+}
+
+.primary-btn:hover {
+    background: transparent;
+    color: #f88c8c;
+}
+
+.primary-btn.dark {
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.primary-btn.dark:hover {
+    background: transparent;
+    border: 1px solid #f88c8c;
+    color: #f88c8c;
+}
+
+.caret-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 0 0;
+}
+
+.caret {
+    transform: rotate(180deg);
+    -webkit-filter: invert(100%);
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.section-top-border {
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+}
+
+.display-none {
+    display: none;
+}
+
+.hide {
+    visibility: hidden;
+    height: 0px;
+}
+
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 25px;
+    color: #555 !important;
+    background-color: #fff7f7 !important;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+/* Add a light grey underline on mouse-over */
+.btn:hover {
+    color: #333 !important;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+    color: black !important;
+    text-decoration: underline !important;
+    text-decoration-color: #f88c8c !important;
+    text-underline-offset: 5px;
+}
+
+.left-btn {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.right-btn {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/* Menu List Area css
+============================================================================================ */
+.menu-area .section-title {
+    /* padding-right: 55px; */
+    @media (max-width: 991px) {
+        .menu-area .section-title {
+            padding-right: 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .menu-area .section-title {
+            margin-top: 60px;
+        }
+    }
+}
+
+.menu-list.workshops {
+    padding: 1em 3em;
+}
+
+.menu-list {
+    padding: 3rem;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .menu-list {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-list {
+        margin-top: 30px;
+    }
+}
+
+.single-menu {
+    margin-bottom: 80px;
+}
+
+@media (max-width: 991px) {
+    .single-menu {
+        margin-bottom: 50px;
+    }
+}
+
+.single-menu:last-child {
+    margin-bottom: 0;
+}
+
+.single-menu h3 {
+    font-size: 21px;
+    position: relative;
+    padding-bottom: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+    .single-menu h3 {
+        margin-bottom: 10px;
+    }
+}
+
+.single-menu h3:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 1px;
+    width: 120px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.single-menu .list li {
+    padding-bottom: 35px;
+}
+
+@media (max-width: 991px) {
+    .single-menu .list li {
+        padding-bottom: 25px;
+    }
+}
+
+.single-menu .list li:last-child {
+    padding-bottom: 0;
+}
+
+.single-menu .list li .menu-item {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+    color: #010000;
+}
+
+@media (max-width: 420px) {
+    .single-menu .list li .menu-item {
+        font-size: 16px;
+    }
+}
+
+.single-menu .list li p {
+    margin: 0;
+}
+
+/* End Menu List Area css */
+
+/* Start Banner Area */
+.banner-area {
+    background: url(../img/banner-bg.png) no-repeat center;
+}
+
+.banner-area .height {
+    height: 400px;
+}
+
+.banner-content {
+    text-align: center;
+    background-color: #fff7f7;
+}
+
+.banner-content h1 {
+    /* color: #fff; */
+    font-size: 50px;
+    /* text-transform: uppercase; */
+    letter-spacing: 3px;
+}
+
+.banner-content h2 {
+    font-size: 38px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .banner-content h1 {
+        letter-spacing: 5px;
+    }
+}
+
+@media (max-width: 414px) {
+    .banner-content h1 {
+        font-size: 30px;
+    }
+}
+
+.banner-content hr {
+    border-color: rgba(255, 255, 255, 0.4);
+    max-width: 400px;
+}
+
+.banner-content .breadcrmb a {
+    color: #ffffff;
+}
+
+.banner-content .breadcrmb a:hover {
+    color: #f88c8c;
+}
+
+.banner-content .breadcrmb span {
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    /* text-transform: uppercase; */
+    padding-top: 8px;
+}
+
+.modal-button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding: 0px;
+    text-align: left;
+}
+
+.modal-header {
+    height: 300px;
+    width: 100%;
+    padding: 0em;
+    border-bottom: 0 none;
+}
+
+.modal-header .close {
+    padding: 1.1em;
+    z-index: 2;
+}
+
+.modal-header-info {
+    display: inline-flex;
+    z-index: 1;
+    margin-left: 5%;
+    position: absolute;
+    width: 100%;
+}
+
+.modal-header-img {
+    position: absolute;
+    background-repeat: none;
+    object-fit: cover;
+    padding: 0px;
+    border-radius: 25px 25px 0px 0px;
+    width: 100%;
+    height: 200px;
+}
+
+.modal-header-titles {
+    position: relative;
+    /* margin-top: 27.5%; */
+    margin-left: 2.5%;
+    width: 90%;
+}
+
+.modal-header-text {
+    display: inline-flex;
+    width: 65%;
+    margin-top: 24%;
+}
+
+.modal-content {
+    border-radius: 25px;
+    margin-top: 15%;
+}
+
+.modal-content h2 {
+    font-weight: bold;
+}
+
+.modal-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* margin-left: -95%; */
+    margin-top: 10%;
+    object-fit: cover;
+}
+
+.modal-time-place {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    width: 60%;
+    /* margin-left: 10%; */
+    font-size: 15px;
+}
+
+.modal-time-place .events-date {
+    width: auto;
+    height: 30px;
+}
+
+.modal-time-place .events-place {
+    width: auto;
+    margin-left: 3px;
+    height: 30px;
+}
+
+.modal-time-place .fa-events-icon {
+    font-size: 20px;
+}
+
+.modal-events-date {
+    display: inline-flex;
+    margin-bottom: -4%;
+}
+
+.modal-events-place {
+    display: inline-flex;
+}
+
+.modal-body {
+    padding: 1em 3em 2em 3em;
+}
+
+.modal-itinerary-img {
+    width: 100%;
+    display: none;
+}
+
+.modal-gallery-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}

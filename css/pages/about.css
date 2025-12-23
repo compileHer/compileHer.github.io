@@ -1,0 +1,60 @@
+/* Start About Area css
+============================================================================================ */
+@media (max-width: 991px) {
+    .about-area .section-title {
+        padding-top: 60px;
+    }
+}
+
+.about-accomplish h1 {
+    font-size: 50px;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 3px;
+}
+
+.about-accomplish h3 {
+    font-family: "Lato", sans-serif;
+}
+
+.fa-accomplish-icon {
+    font-size: 60px;
+    color: #d1d1d1;
+    padding-top: 20px;
+}
+
+.single-team-member {
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 325px;
+}
+
+.single-team-member .proff {
+    padding-top: 15px;
+    padding-left: 15px;
+    text-align: center;
+    color: #000000;
+}
+
+.single-team-member h4 {
+    color: #000000;
+    font-weight: bold;
+}
+
+.single-team-member a {
+    color: #000000;
+    font-weight: bold;
+}
+
+.single-team-member p {
+    color: #000000;
+}
+
+.img-round {
+    border-radius: 50%;
+    padding-left: 15px;
+}
+
+/* End About Area CSS */

@@ -5,51 +5,59 @@ let elem = [...document.querySelectorAll(".eventCheck")];
 elem.forEach((item) => item.addEventListener("change", getChecked));
 
 function getChecked() {
-  let getChex = elem.filter((item) => item.checked).map((item) => item.value);
-  console.log(getChex);
-  dropdown = getChex;
-  filterSelection(btn, dropdown);
+    let getChex = elem.filter((item) => item.checked).map((item) => item.value);
+    console.log(getChex);
+    dropdown = getChex;
+    filterSelection(btn, dropdown);
 }
 
 function updateButton(f) {
-  btn = f;
-  filterSelection(btn, dropdown);
+    btn = f;
+    filterSelection(btn, dropdown);
 }
 
 filterSelection(btn, dropdown);
-function filterSelection(b, d) {
-  var x, i;
-  x = document.getElementsByClassName("event-card");
-  if (b === "all" && d.length == 0) b = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  if (d.length == 0) {
-    for (i = 0; i < x.length; i++) {
-      x[i].classList.remove("show");
-      if (x[i].className.indexOf(b) > -1) {
-        x[i].classList.add("show");
-      }
+function filterSelection(buttonName, dropdownState) {
+    var eventElements = document.getElementsByClassName("event-card");
+
+    if (buttonName === "all" && dropdownState.length == 0) buttonName = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    if (dropdownState.length == 0) {
+        for (var i = 0; i < eventElements.length; i++) {
+            const el = eventElements[i];
+
+            if (el.className.indexOf(buttonName) > -1) {
+                el.classList.remove("display-none");
+            } else {
+                el.classList.add("display-none");
+            }
+        }
+    } else {
+        if (buttonName == "all") buttonName = "";
+
+        for (var i = 0; i < eventElements.length; i++) {
+            const el = eventElements[i];
+
+            el.classList.add("display-none");
+
+            if (el.className.indexOf(buttonName) > -1) {
+                dropdownState.forEach((dropdownFilter) => {
+                    if (el.className.indexOf(dropdownFilter) > -1) {
+                        el.classList.remove("display-none");
+                    }
+                });
+            }
+        }
     }
-  } else {
-    if(b == "all") b = "";
-    for (i = 0; i < x.length; i++) {
-      x[i].classList.remove("show");
-      for (j = 0; j < d.length; j++) {
-        // console.log(x[i].className.indexOf(b))
-        console.log(x[i].className.indexOf(d[j]))
-        if ((x[i].className.indexOf(b) > -1) && (x[i].className.indexOf(d[j]) > -1))
-          x[i].classList.add("show");
-      }
-    }
-  }
 }
 
 // Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
+var btnContainer = document.getElementById("events-container");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[1].className = current[1].className.replace(" active", "");
-    this.className += " active";
-  });
+    btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[1].className = current[1].className.replace(" active", "");
+        this.className += " active";
+    });
 }

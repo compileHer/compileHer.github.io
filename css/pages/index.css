@@ -1,0 +1,58 @@
+/* Start Home Banner Area */
+.home-banner-area {
+    background:
+    /*url(../img/header-bg4.jpg)*/ no-repeat center;
+}
+
+.home-banner-.height {
+    height: 750px;
+}
+
+@media (max-width: 991px) {
+    .home-banner-area .height {
+        height: 500px !important;
+    }
+}
+
+.home-banner-content {
+    text-align: left;
+    color: #fff;
+}
+
+.home-banner-content h1 {
+    text-align: left;
+    color: #fff;
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 7.8px;
+}
+
+@media (max-width: 991px) {
+    .home-banner-content h1 br {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .home-banner-content h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 414px) {
+    .home-banner-content h1 {
+        font-size: 40px;
+    }
+}
+
+.home-banner-content hr {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.home-banner-content p {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+
+/* End Home Banner Area */

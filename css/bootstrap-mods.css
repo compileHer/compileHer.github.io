@@ -1,0 +1,27 @@
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+.card-panel {
+    margin: 0;
+    padding: 60px;
+}
+
+/**
+ *  Typography
+ *
+ **/
+.btn i,
+.btn-large i,
+.btn-floating i,
+.btn-large i,
+.btn-flat i {
+    font-size: 1em;
+    line-height: inherit;
+}

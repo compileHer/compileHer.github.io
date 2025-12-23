@@ -1,0 +1,108 @@
+/* Start Gallery Area css */
+.gallery-area {
+    padding: 30px 0 90px;
+}
+
+@media (max-width: 991px) {
+    .gallery-area {
+        padding: 50px 0 50px;
+    }
+}
+
+.single-gallery {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.single-gallery figure {
+    overflow: hidden;
+}
+
+.single-gallery figure img {
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.single-gallery .overlay {
+    z-index: 2;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.single-gallery .icon {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    opacity: 0;
+}
+
+.single-gallery .icon a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.single-gallery .icon a span {
+    display: inline-block;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.single-gallery:hover figure img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.single-gallery:hover .overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.single-gallery:hover .icon {
+    top: 50%;
+    opacity: 1;
+}
+
+.single-gallery:hover .icon a span {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.gallery-image-container {
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 384px;
+}
+
+/* End Gallery Area css */

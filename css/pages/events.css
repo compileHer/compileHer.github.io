@@ -1,0 +1,77 @@
+/* Events Area CSS */
+
+.event-card {
+    width: 90%;
+    max-width: 780px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 8px 8px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
+    margin: auto auto 30px auto;
+    padding: 0 10px 0 0;
+}
+
+.event_bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.event-info {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    max-height: 7.2em;
+    line-height: 1.8em;
+    color: #777777;
+}
+
+.fa-events-icon {
+    font-size: 25px;
+    color: #d1d1d1;
+}
+
+.events-time-place {
+    width: 100%;
+    color: #777777;
+}
+
+.events-date {
+    display: inline-flex;
+    width: 45%;
+    color: #777777;
+}
+
+.events-place {
+    display: inline-flex;
+    width: 45%;
+}
+
+.modal-lg {
+    max-width: 900px;
+}
+
+.slideshow-arrow {
+    margin: auto 0px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #f88c8c;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main-image1,
+#main-image2,
+#main-image3 {
+    margin: 0px 5px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    height: 180px;
+    width: 240px;
+    border-radius: 20px;
+}

@@ -1,0 +1,1 @@
+magick <input-file> -gravity center -extent "%[fx:h<w?h:w]x%[fx:h<w?h:w]" -resize 800x800 <output-file>
